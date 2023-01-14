@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Category</title>
+</head>
+<body>
+<!-- ===============  nav  ========================== -->
+  <div>
+    <nav class="navbar navbar-expand-lg bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Meals.com</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="category.html">Search by Category</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- ===============  header  ========================== -->
+    
+    <h1 class="text-center">Meals.com</h1>
+    <h3 class="text-center">Find the best meals online easy to coock at home</h3>
+  </div>
+<!-- ===============  Input but it hidden  ========================== -->
+  <div class="input-group mb-3 d-none">
+    <input type="text" placeholder="Search"  class="w-50 mx-auto p-2" aria-label="Sizing example input" id="inputvalue" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+<!-- ===============  Category  ========================== -->
+   <div class="spacebetwenntwoselect d-flex justify-content-center mx-auto mt-3 mb-3 gap-5" style="width: 45%;">
+    <select class="form-select"  id="category" aria-label="Default select example">
+        <option selected>All Categories</option>
+
+
+      </select>    
+<!-- ===============  region  ========================== -->
+      <select class="form-select" id="region"  aria-label="Default select example">
+        <option selected>All Regions</option>
+      </select>
+      <button class="btn btn-success" id="seachby2" >Search</button>
+   </div>
+    <!-- ================= contain all carts ========================= -->
+    <div id="error" class="mt-5">
+
+    </div>
+    <div class="container">
+    
+    <div id="meallrandom" class="d-flex justify-content-center flex-wrap mx-auto">
+    </div>
+    <div class="pageNumbers" id="pagination"></div>
+
+  </div>
+
+    <!-- ================= pop up ========================= -->  
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="modaldetails">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="main.js" ></script>
+</body>
+</html
